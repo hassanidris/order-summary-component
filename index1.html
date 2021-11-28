@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 0.9em;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="order">
+        <div class="order__image">
+          <img src="assets/img/illustration-hero.svg" alt="Order Image" />
+        </div>
+        <div class="order__content">
+          <h1 class="order__content--title">Order Summary</h1>
+          <p class="order__content--desc">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <div class="order__cta">
+            <div class="order__cta__cost">
+              <img src="assets/img/icon-music.svg" alt="Icon Music" />
+              <div class="order__plan">
+                <p class="order__plan--title">Annual Plan</p>
+                <p class="order__plan--price">$59.99/year</p>
+              </div>
+              <a href="#" class="order__cta__cost--change">Change</a>
+            </div>
+            <a href="#" class="order__cta--proceed">Proceed to Payment</a>
+            <a href="#" class="order__cta--cancel">Cancel Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Hassen Ahmed</a>.
+      </div>
+    </main>
+  </body>
+</html>

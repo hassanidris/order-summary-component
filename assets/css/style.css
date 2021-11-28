@@ -1,0 +1,193 @@
+/* ------------------- */
+/* Custom Properties   */
+/* ------------------- */
+:root {
+  /*  Primary Colors  */
+  --clr-paleBlue: 225 100% 94%;
+  --clr-brightBlue: 245 75% 52%;
+  --clr-white: 0 0% 100%;
+  /*  Neutral Colors  */
+  --clr-veryPaleBlue: 225, 100%, 98%;
+  --clr-desaturatedBlue: 224 23% 55%;
+  --clr-darkBlue: 223 47% 23%;
+  /*  font-size  */
+  --fs-200: 1.7rem;
+  --fs-100: 1rem;
+  /*  font-weight  */
+  --fw-900: 900;
+  --fw-700: 700;
+  --fw-500: 500;
+  /*  font-family  */
+  --ff-red-hat-dis: "Red Hat Display", sans-serif;
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+/*  Box sizing  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*  Reset Margins  */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture,
+blockquote,
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-weight: 500;
+}
+
+ol, ul, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+/*  setup the body  */
+body {
+  font-family: var(--ff-red-hat-dis);
+  font-size: var(--fs-100);
+  font-weight: var(--fw-500);
+  line-height: 1.7;
+  background: url(/assets/img/pattern-background-desktop.svg) no-repeat top hsl(var(--clr-paleBlue));
+  min-height: 100vh;
+}
+
+/*  make images easier to work with  */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1em;
+}
+
+.order {
+  border-radius: 1.5em;
+  background-color: hsl(var(--clr-white));
+  width: 88%;
+  max-width: 450px;
+  margin-inline: auto;
+  overflow: hidden;
+  text-align: center;
+}
+.order__content {
+  padding-inline: 1.7em;
+}
+.order__content--title {
+  font-size: var(--fs-200);
+  font-weight: var(--fw-900);
+  color: hsl(var(--clr-darkBlue));
+  margin: 0.7em 0;
+}
+.order__content--desc {
+  color: hsl(var(--clr-desaturatedBlue));
+  padding-inline: 2em;
+}
+
+.order__cta__cost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(var(--clr-veryPaleBlue));
+  padding: 1em;
+  margin-top: 1.5em;
+  border-radius: 0.625em;
+}
+
+.order__plan {
+  align-self: flex-start;
+  text-align: left;
+  flex: 1 1 0;
+  margin-left: 1em;
+}
+.order__plan--title {
+  font-weight: var(--fw-700);
+}
+.order__plan--price {
+  color: hsl(var(--clr-desaturatedBlue));
+}
+
+.order__cta__cost--change {
+  font-weight: var(--fw-700);
+  color: hsl(var(--clr-brightBlue));
+  text-decoration: underline;
+}
+
+.order__cta--proceed {
+  display: block;
+  font-weight: var(--fw-700);
+  background-color: hsl(var(--clr-brightBlue));
+  color: hsl(var(--clr-white));
+  border-radius: 10px;
+  padding: 0.7em 0.3em;
+  margin-top: 1.7em;
+  box-shadow: 0px 1em 0.7em hsl(var(--clr-paleBlue));
+}
+
+.order__cta--cancel {
+  display: block;
+  font-weight: var(--fw-700);
+  color: hsl(var(--clr-desaturatedBlue));
+  margin: 1.2em 0;
+}
+
+@media (min-width: 375px) {
+  body {
+    background: url(/assets/img/pattern-background-desktop.svg) no-repeat top hsl(var(--clr-paleBlue));
+  }
+
+  .order__cta__cost--change:hover,
+.order__cta__cost--change:focus {
+    text-decoration: none;
+    color: hsl(var(--clr-desaturatedBlue));
+  }
+
+  .order__cta--proceed:hover,
+.order__cta--proceed:focus {
+    background-color: hsl(var(--clr-desaturatedBlue));
+  }
+
+  .order__cta--cancel:hover,
+.order__cta--cancel:focus {
+    color: hsl(var(--clr-darkBlue));
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
