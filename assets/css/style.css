@@ -71,7 +71,10 @@ body {
   font-size: var(--fs-100);
   font-weight: var(--fw-500);
   line-height: 1.7;
-  background: url(../img/pattern-background-mobile.svg) no-repeat top hsl(var(--clr-paleBlue));
+  background-image: url(../img/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: hsl(var(--clr-paleBlue));
   min-height: 100vh;
 }
 
@@ -170,7 +173,10 @@ a {
 
 @media (min-width: 375px) {
   body {
-    background: url(../img/pattern-background-desktop.svg) no-repeat top hsl(var(--clr-paleBlue));
+    background-image: url(../img/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: hsl(var(--clr-paleBlue));
   }
 
   .order__cta__cost--change:hover,
